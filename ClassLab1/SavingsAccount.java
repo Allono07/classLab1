@@ -1,11 +1,8 @@
+package ClassLab1;
+
 public class SavingsAccount extends BankAccount {
-    private double interestRate;
-    private boolean isInterestCompoundedMonthly;
-
-
-    public SavingsAccount() {
-        super();
-    }
+    double interestRate;
+    boolean isInterestCompoundedMonthly;
 
     public SavingsAccount(String accountNumber, String accountHolderName, double balance, String accountType,
                           double interestRate, boolean isInterestCompoundedMonthly) {
@@ -14,6 +11,9 @@ public class SavingsAccount extends BankAccount {
         this.isInterestCompoundedMonthly = isInterestCompoundedMonthly;
     }
 
+    public SavingsAccount() {
+
+    }
 
     public double getInterestRate() {
         return interestRate;
@@ -30,6 +30,4 @@ public class SavingsAccount extends BankAccount {
     public void setInterestCompoundedMonthly(boolean interestCompoundedMonthly) {
         isInterestCompoundedMonthly = interestCompoundedMonthly;
     }
-
-
 }

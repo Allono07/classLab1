@@ -1,10 +1,11 @@
-public class BankAccount {
-    private String accountNumber;
-    private String accountHolderName;
-    private double balance;
-    private String accountType;
+package ClassLab1;
 
-    // Constructors
+public class BankAccount {
+    String accountNumber;
+    String accountHolderName;
+    double balance;
+    String accountType;
+
     public BankAccount() {
     }
 
@@ -15,7 +16,6 @@ public class BankAccount {
         this.accountType = accountType;
     }
 
-    // Getters and Setters
     public String getAccountNumber() {
         return accountNumber;
     }
